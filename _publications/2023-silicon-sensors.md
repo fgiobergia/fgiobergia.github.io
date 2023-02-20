@@ -2,7 +2,6 @@
 title: "Silicon sensors with resistive read-out: Machine Learning techniques for ultimate spatial resolution"
 collection: publications
 permalink: /publication/2023-silicon-sensors
-<!-- excerpt: 'A paper with preliminary results on the application of ML techniques for the spatial resolution of RSD sensors.' -->
 date: 2023-01-01
 venue: 'Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment'
 ---
