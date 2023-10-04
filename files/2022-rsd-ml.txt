@@ -1,0 +1,10 @@
+@article{siviero2022first,
+  title={First experimental results of the spatial resolution of RSD pad arrays read out with a 16-ch board},
+  author={Siviero, F and Giobergia, F and Menzio, L and Miserocchi, F and Tornago, M and Arcidiacono, R and Cartiglia, N and Costa, M and Ferrero, M and Gioachin, G and others},
+  journal={Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+  volume={1041},
+  pages={167313},
+  year={2022},
+  publisher={Elsevier}
+}
+

@@ -1,0 +1,7 @@
+@article{giobergia2022triplet,
+  title={Triplet Losses-based Matrix Factorization for Robust Recommendations},
+  author={Giobergia, Flavio},
+  journal={arXiv preprint arXiv:2210.12098},
+  year={2022}
+}
+

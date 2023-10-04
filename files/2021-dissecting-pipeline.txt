@@ -1,0 +1,10 @@
+@article{giordano2021dissecting,
+  title={Dissecting a data-driven prognostic pipeline: A powertrain use case},
+  author={Giordano, Danilo and Pastor, Eliana and Giobergia, Flavio and Cerquitelli, Tania and Baralis, Elena and Mellia, Marco and Neri, Alessandra and Tricarico, Davide},
+  journal={Expert Systems with Applications},
+  volume={180},
+  pages={115109},
+  year={2021},
+  publisher={Elsevier}
+}
+

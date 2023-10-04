@@ -1,0 +1,10 @@
+@article{pasini2022semantic,
+  title={Semantic Image Collection Summarization With Frequent Subgraph Mining},
+  author={Pasini, Andrea and Giobergia, Flavio and Pastor, Eliana and Baralis, Elena},
+  journal={IEEE Access},
+  volume={10},
+  pages={131747--131764},
+  year={2022},
+  publisher={IEEE}
+}
+

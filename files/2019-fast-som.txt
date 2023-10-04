@@ -1,0 +1,9 @@
+@inproceedings{giobergia2019fast,
+  title={Fast Self-Organizing Maps Training},
+  author={Giobergia, Flavio and Baralis, Elena},
+  booktitle={2019 IEEE International Conference on Big Data (Big Data)},
+  pages={2257--2266},
+  year={2019},
+  organization={IEEE}
+}
+

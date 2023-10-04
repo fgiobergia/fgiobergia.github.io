@@ -1,0 +1,6 @@
+@article{giobergia2023giobergia,
+  title={Giobergia at Multi-Task Transformer Tuning for Joint Conspiracy Theory Detection and Classification},
+  author={Giobergia, Flavio},
+  year={2023}
+}
+

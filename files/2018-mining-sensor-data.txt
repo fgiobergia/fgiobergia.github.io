@@ -1,0 +1,9 @@
+@inproceedings{giobergia2018mining,
+  title={Mining sensor data for predictive maintenance in the automotive industry},
+  author={Giobergia, Flavio and Baralis, Elena and Camuglia, Maria and Cerquitelli, Tania and Mellia, Marco and Neri, Alessandra and Tricarico, Davide and Tuninetti, Alessia},
+  booktitle={2018 IEEE 5th International Conference on Data Science and Advanced Analytics (DSAA)},
+  pages={351--360},
+  year={2018},
+  organization={IEEE}
+}
+

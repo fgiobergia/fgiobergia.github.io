@@ -1,0 +1,6 @@
+@article{koudounas2023barhotti,
+  title={ba$\rho$tti at GeoLingIt: Beyond Boundaries, Enhancing Geolocation Prediction and Dialect Classification on Social Media in Italy},
+  author={Koudounas, Alkis and Giobergia, Flavio and Benedetto, Irene and Monaco, Simone and Cagliero, Luca and Apiletti, Daniele and Baralis, Elena},
+  year={2023}
+}
+

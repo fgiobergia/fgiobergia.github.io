@@ -1,0 +1,9 @@
+@inproceedings{koudounas2022time,
+  title={Time-of-Flight Cameras in Space: Pose Estimation with Deep Learning Methodologies},
+  author={Koudounas, Alkis and Giobergia, Flavio and Baralis, Elena},
+  booktitle={2022 IEEE 16th International Conference on Application of Information and Communication Technologies (AICT)},
+  pages={1--6},
+  year={2022},
+  organization={IEEE}
+}
+
