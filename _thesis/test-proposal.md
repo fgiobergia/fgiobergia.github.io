@@ -1,6 +1,6 @@
 ---
 title: "Thesis proposal test 1"
-excerpt: "A short description"
+permalink: /thesis/test-proposal-test-1/
 collection: thesis
 ---
 
