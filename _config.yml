@@ -217,7 +217,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false
   # _publications
   - scope:
       path: ""
@@ -226,7 +226,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false
   # _portfolio
   - scope:
       path: ""
@@ -235,7 +235,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comment: true
+      comment: false
   # _talks
   - scope:
       path: ""
@@ -244,6 +244,15 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+
+  - scope:
+      path: ""
+      type: thesis
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: false
 
 # Sass/SCSS
 sass:
