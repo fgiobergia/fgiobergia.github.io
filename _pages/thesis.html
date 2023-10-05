@@ -1,0 +1,17 @@
+---
+layout: archive
+title: "Thesis proposals"
+permalink: /thesis/
+author_profile: true
+---
+
+{% include base_path %}
+
+This page contains a list of thesis proposals, with a title and a short description. 
+
+If you have a proposal for a thesis covering topics other than those discussed here, feel free to get in touch to discuss!
+
+{% for post in site.thesis %}
+  {% include thesis.html %}
+{% endfor %}
+
