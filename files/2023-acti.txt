@@ -1,6 +1,9 @@
-@article{giobergia2023giobergia,
-  title={Giobergia at Multi-Task Transformer Tuning for Joint Conspiracy Theory Detection and Classification},
-  author={Giobergia, Flavio},
-  year={2023}
+@inproceedings{giobergia2023giobergia,
+title = {Giobergia at Multi-Task Transformer Tuning for Joint Conspiracy Theory Detection and Classification},
+author={Giobergia, Flavio},
+booktitle = { Eighth Evaluation Campaign of Natural Language Processing and Speech Tools for Italian},
+year = 2023,
+series = {CEUR Workshop Proceedings},
+issn = {1613-0073},
+venue = {Parma, Italy},
 }
-

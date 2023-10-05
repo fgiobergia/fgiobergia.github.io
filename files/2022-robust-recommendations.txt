@@ -1,7 +1,10 @@
-@article{giobergia2022triplet,
+@inproceedings{giobergia2022triplet,
   title={Triplet Losses-based Matrix Factorization for Robust Recommendations},
   author={Giobergia, Flavio},
-  journal={arXiv preprint arXiv:2210.12098},
-  year={2022}
+  booktitle = {  Proceedings of the CIKM 2022 Workshops },
+  year = 2022,
+  series = {CEUR Workshop Proceedings},
+  issn = {1613-0073},
+  venue = {Atlanta, USA},
 }
 

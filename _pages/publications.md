@@ -6,11 +6,13 @@ author_profile: true
 ---
 
 {% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
+  A list of articles is also available on <u><a href="{{author.googlescholar}}">Google Scholar</a>.</u>
 {% endif %}
 
 {% include base_path %}
 
+<ul>
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  {% include publication.html %}
 {% endfor %}
+</ul>

@@ -1,6 +1,10 @@
-@article{koudounas2023barhotti,
+@inproceedings{koudounas2023barhotti,
   title={ba$\rho$tti at GeoLingIt: Beyond Boundaries, Enhancing Geolocation Prediction and Dialect Classification on Social Media in Italy},
   author={Koudounas, Alkis and Giobergia, Flavio and Benedetto, Irene and Monaco, Simone and Cagliero, Luca and Apiletti, Daniele and Baralis, Elena},
-  year={2023}
+  booktitle = { Eighth Evaluation Campaign of Natural Language Processing and Speech Tools for Italian},
+  year = 2023,
+  series = {CEUR Workshop Proceedings},
+  issn = {1613-0073},
+  venue = {Parma, Italy},
 }
 
