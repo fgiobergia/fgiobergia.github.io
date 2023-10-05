@@ -13,6 +13,8 @@ author_profile: true
 
 <ul>
 {% for post in site.publications reversed %}
-  {% include publication.html %}
+  {% if post %}
+    {% include publication.html %}
+  {% endif %}
 {% endfor %}
 </ul>
