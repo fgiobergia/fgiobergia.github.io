@@ -11,10 +11,10 @@ author_profile: true
 
 {% include base_path %}
 
+{% site.publications %}
 <ul>
 {% for post in site.publications reversed %}
-  {% if post %}
-    {% include publication.html %}
-  {% endif %}
+  {% post %}
+  {% include publication.html %}
 {% endfor %}
 </ul>
