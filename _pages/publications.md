@@ -13,7 +13,6 @@ author_profile: true
 
 <ul>
 {% for post in site.publications reversed %}
-{{post.title}} => |||{{ post }}|||
   {% include publication.html %}
 {% endfor %}
 </ul>
