@@ -1,5 +1,5 @@
 ---
-title: "Driving the optimization of nucllear fusion reactor design through machine learning techniques"
+title: "Driving the optimization of nuclear fusion reactor design through machine learning techniques"
 permalink: /thesis/2023-07-26-nuclear-fusion/
 collection: thesis
 ---
@@ -12,6 +12,7 @@ As the world seeks cleaner and more sustainable energy solutions, nuclear fusion
 * Develop a framework that integrates Electro-Magnetic, Monte-Carlo and Magneto-Hydro-Dynamics simulations, to provide a more accurate and complete picture of the reactor's behavior, hopefully at a fraction of the computational cost!
 
 **Details:**
+
 🤝 Collaboration with the Department of Applied Science and Technology (DISAT), with Prof. F. Laviano, Dr. D. Torsello
 
 🏫 Possibility of a period aproad (MIT) 
