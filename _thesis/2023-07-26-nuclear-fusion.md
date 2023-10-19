@@ -16,6 +16,6 @@ As the world seeks cleaner and more sustainable energy solutions, nuclear fusion
 
 🤝 Collaboration with the Department of Applied Science and Technology (DISAT), with Prof. F. Laviano, Dr. D. Torsello
 
-🏫 Possibility of a period aproad (MIT) 
+🏫 Possibility of a period abroad (MIT) 
 
 💰 Possibility for a monthly grant
