@@ -3,7 +3,6 @@ title: "Driving the optimization of nuclear fusion reactor design through machin
 permalink: /thesis/2023-07-26-nuclear-fusion/
 collection: thesis
 status: available
-contact: "flavio.giobergia@polito.it"
 ---
 
 As the world seeks cleaner and more sustainable energy solutions, nuclear fusion has emerged as a promising contender. This thesis proposal aims to adopt machine learning techniques to make fusion reactors even better.
