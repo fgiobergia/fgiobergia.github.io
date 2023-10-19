@@ -3,6 +3,9 @@ title: "Speech XAI, explaining reasons behind speech model predictions"
 permalink: /thesis/2023-10-01-speech-xai/
 collection: thesis
 status: available
+contact_name: "Alkis Koudounas"
+contact: "alkis.koudounas@polito.it"
+contact_cc: "flavio.giobergia@polito.it"
 ---
 
 <a href="https://en.wikipedia.org/wiki/Audio_signal_processing"><img src="https://img.shields.io/badge/Audio%20&%20Speech%20Processing-blue" alt="Audio Processing"></a>
