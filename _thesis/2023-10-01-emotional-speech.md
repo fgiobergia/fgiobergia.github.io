@@ -6,7 +6,7 @@ status: available
 ---
 <a href="https://en.wikipedia.org/wiki/Audio_signal_processing"><img src="https://img.shields.io/badge/Audio%20&%20Speech%20Processing-blue" alt="Audio Processing"></a>
 
-![immagine](images/ConditionalGAN.png)
+![immagine](/images/ConditionalGAN.png)
 
 Emotional speech synthesis represents a groundbreaking technology that has the potential to reshape human-machine interaction across various domains. 
 By infusing synthesized speech with different emotions, this technology can enhance the naturalness and effectiveness of machine-generated speech, opening up new frontiers in virtual agents, human-computer interfaces, entertainment, therapy, and assistive technologies. 
