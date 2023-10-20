@@ -46,7 +46,8 @@ layout: default
             {% if page.status == 'available' %}
               <p class="page__status"><strong>Status: </strong> Available ✅</p>
               <!-- apply button, sends an email -->
-              <button class="btn btn--primary" onclick="location.href='mailto:{{ page.contact if page.contact is defined and page.contact|length else site.author.email }}?subject=[MSc thesis] {{ page.title }}&cc={{ page.contact_cc if page.contact_cc is defined and page.contact_cc|length else site.author.email if (page.contact is defined and page.contact|length and page.contact != site.author.email) or page.contact is not defined or not page.contact|length else \'\' }}'">Apply!</button>
+              {{ "CONTACT FOUND" if page.contact else "CONTACT NOT FOUND" }}|{{ "CC CONTACT FOUND" if page.contact_cc else "CC CONTACT NOT FOUND" }}|{{ "CONTACT FOUND" if page.contact is defined else "CONTACT NOT FOUND" }}|{{ "CC CONTACT FOUND" if page.contact_cc is defined else "CC CONTACT NOT FOUND" }}|{{ "CONTACT FOUND" if page.contact != "" else "CONTACT NOT FOUND" }}|{{ "CC CONTACT FOUND" if page.contact_cc != "" else "CC CONTACT NOT FOUND" }}|{{ "CONTACT FOUND" if page.contact|length >0 else "CONTACT NOT FOUND" }}|{{ "CC CONTACT FOUND" if page.contact_cc|length > 0 else "CC CONTACT NOT FOUND" }}|
+              <button class="btn btn--primary" onclick="location.href='mailto:{{ page.contact if page.contact else site.author.email }}?subject=[MSc thesis] {{ page.title }}&cc={{ page.contact_cc if page.contact_cc else site.author.email if page.contact and page.contact != site.author.email else \'NONE\' }}'">Apply!</button>
             {% elsif page.status == 'closed' %}
               <p class="page__status"><strong>Status: </strong> Not available ❌</p>
             {% endif %}
