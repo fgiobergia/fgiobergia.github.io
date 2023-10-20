@@ -46,7 +46,6 @@ layout: default
             {% if page.status == 'available' %}
               <p class="page__status"><strong>Status: </strong> Available ✅</p>
               <!-- apply button, sends an email -->
-              {{ page }}
               <button class="btn btn--primary" onclick="location.href='mailto:{% if page.contact %}{{page.contact}}{% else %}{{ site.author.email}}{% endif %}?subject=[MSc thesis] {{ page.title }}&cc={% if page.contact_cc %}{{ page.contact_cc}}{% elsif page.contact and page.contact != site.author.email %}{{ site.author.email }}{% endif %}'">Apply!</button>
             {% elsif page.status == 'closed' %}
               <p class="page__status"><strong>Status: </strong> Not available ❌</p>
