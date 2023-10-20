@@ -46,8 +46,8 @@ layout: default
             {% if page.status == 'available' %}
               <p class="page__status"><strong>Status: </strong> Available ✅</p>
               <!-- apply button, sends an email -->
-              {{ site.author.email }}|{{ page.contact }}|{{ page.contact if page.contact else "NOT FOUND"}}|{{ page.contact_cc }}|{{ page.contact_cc if page.contact_cc else "CC not found"}}
-              <button class="btn btn--primary" onclick="location.href='mailto:{{ page.contact if page.contact else site.author.email }}?subject=Application for {{ page.title }}&cc={{ page.contact_cc if page.contact_cc else site.author.email if (page.contact and page.contact != site.author.email) or not page.contact else \'\' }}'">Apply!</button>
+              {{ site.author.email }}|{{ page.contact }}|{{ page.contact if page.contact != '' else "NOT FOUND"}}|{{ page.contact_cc }}|{{ page.contact_cc if page.contact_cc != '' else "CC not found"}}
+              <button class="btn btn--primary" onclick="location.href='mailto:{{ page.contact if page.contact != \'\' else site.author.email }}?subject=[MSc thesis] {{ page.title }}&cc={{ page.contact_cc if page.contact_cc != \'\' else site.author.email if (page.contact != \'\' and page.contact != site.author.email) or page.contact == \'\' else \'\' }}'">Apply!</button>
             {% elsif page.status == 'closed' %}
               <p class="page__status"><strong>Status: </strong> Not available ❌</p>
             {% endif %}
