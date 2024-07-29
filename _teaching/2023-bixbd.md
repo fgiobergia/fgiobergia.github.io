@@ -4,7 +4,8 @@ collection: teaching
 type: "Master of Science, Mathematical Egineering + Management Engineering"
 permalink: /teaching/2023-bixbd
 venue: "Politecnico di Torino"
-date: A.Y. 2023-24
+years: A.Y. 2022-23
+date: 1/1/2023
 location: "Turin, Italy"
 ---
 The course provides an introduction to data science (preprocessing, rule mining, classification, clustering) and data warehousing. 
