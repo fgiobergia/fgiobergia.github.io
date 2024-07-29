@@ -4,7 +4,7 @@ collection: teaching
 type: "Master of Science, Civil Engineering"
 permalink: /teaching/2019-tsda
 venue: "Politecnico di Torino"
-years: A.Y. 2019-20, 2020-21, 2021-22, 2022-23
+years: A.Y. 2019-20 ➡️ 2022-23
 date: 1/1/2019
 location: "Turin, Italy"
 ---
