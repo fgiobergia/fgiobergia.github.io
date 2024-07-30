@@ -12,4 +12,4 @@ The course provides an introduction to data science (preprocessing, rule mining,
 
 The course introduces techniques for storing, managing, analyzing, and querying large data collections, e.g. data warehouses, to support strategic decision support. The course also addresses relational and non-relational database technologies, together with traditional data mining techniques. 
 
-I have TA'd this course in A.Y. 2023-24, covering topics related to data mining, non-relational databases, and data warehousing.
+I was a TA this course in A.Y. 2023-24, covering topics related to data mining, non-relational databases, and data warehousing.
