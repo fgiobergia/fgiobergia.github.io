@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Flavio Giobergia"
+  description: "Academic website of Flavio Giobergia, Assistant Professor at Politecnico di Torino."
+  navbar:
+    pinned: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: publications.qmd
+        text: Publications
+      - href: teaching.qmd
+        text: Teaching
+    right:
+      - icon: envelope
+        href: "mailto:flavio.giobergia@polito.it"
+        aria-label: Email
+      - icon: github
+        href: "https://github.com/fgiobergia"
+        aria-label: GitHub
+  page-footer:
+    left: "© 2026 Flavio Giobergia"
+    right: "Built with [Quarto](https://quarto.org/)"
+  search: true
+  back-to-top-navigation: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-title: On this page
+    smooth-scroll: true
+    link-external-newwindow: true

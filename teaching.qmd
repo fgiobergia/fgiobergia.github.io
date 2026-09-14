@@ -1,0 +1,28 @@
+---
+title: "Teaching"
+# description: "Current courses."
+---
+
+
+::: {.course-card}
+### Data Science and Machine Learning Lab
+**MSc in Data Science and Engineering · Politecnico di Torino**
+
+A hands-on course aimed at introducing the field of data science and machine learning to the students of the Master of Science in Data Science and Engineering. The course covers topics related to data preprocessing, supervised and unsupervised learning, and model evaluation. Several experimental exercises are proposed to the students, who are expected to implement and evaluate machine-learning models on real-world datasets. The exam covers both theoretical and practical aspects of the course, including a project in which students are asked to apply the learned techniques to a real-world problem.
+
+[Course website](https://dbdmg.polito.it/dbdmg_web/2025/data-science-and-machine-learning-lab-2025-26/)
+:::
+
+::: {.course-card}
+### Large Language Models for Software Engineering
+**MSc in Computer Engineering · Politecnico di Torino**
+
+The course offers an introduction to transformers and their scaling to large language models, with a focus on their application to software engineering tasks. As a part of the course, students are asked to address existing problems well-known in the NLP community. Some of the best works that stem from these group projects are further elaborated in collaboration with the lecturers; resulting in publications in peer-reviewed venues (see below). 
+
+[Course website](https://dbdmg.polito.it/dbdmg_web/2025/large-language-models-for-software-engineering-2025-26/)
+
+[GitHub repository](https://github.com/dbdmg/llm)
+
+[List of publications associated with the course](publications.html?tag=LLM4SE%20course)
+:::
+

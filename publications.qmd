@@ -1,0 +1,17 @@
+---
+title: "Publications"
+# description: "Peer-reviewed articles, conference papers, preprints, and other scholarly outputs."
+bibliography: publications.bib
+nocite: |
+  @*
+format:
+  html:
+    include-after-body: publications-year-groups.html
+---
+
+This page presents my publications grouped by year. Select a topic tag to see all publications associated with it.
+
+For a complete and current citation record, see [Google Scholar](https://scholar.google.com/citations?user=P33mBRoAAAAJ) and [ORCID](https://orcid.org/0000-0001-8806-7979).
+
+::: {#refs}
+:::

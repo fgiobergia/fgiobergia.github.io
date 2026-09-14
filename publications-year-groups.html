@@ -1,0 +1,198 @@
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Edit this map to change tags and publication order.
+  // Within each year, papers appear in exactly the order used here.
+  // You can add more than one tag: ["Large language models", "Evaluation"].
+  // Identical tag names always receive the same color.
+  // Prefix venues with "venue:" for a gray badge, e.g. "venue:Journal".
+  const publicationTags = {
+    // 2026
+    d2026evaluation: ["Benchmark", "Unlearning", "venue:Journal"],
+    mickus2026can: ["LLM", "Hallucinations", "Benchmark", "venue:Conference"],
+    savelli2026fame: ["LLM", "Benchmark", "Unlearning", "venue:Conference"],
+    savelli2026unslu: ["Speech", "Unlearning", "Benchmark", "venue:Journal"],
+    giobergia2026cminds: ["LLM", "Competition", "venue:Workshop"],
+    giobergia2026bminds: ["LLM", "Competition", "venue:Workshop"],
+    giobergia2026aminds: ["LLM", "Competition", "venue:Workshop"],
+    monaco2026enforcing: ["venue:Journal"],
+    claudio2026svela: ["LLM", "Unlearning", "Competition organizers", "venue:Workshop"],
+    giobergia2026differentiable: ["ML in teaching", "venue:Workshop"],
+    ccelik2026polito:  ["LLM", "Competition", "LLM4SE course", "venue:Workshop"],
+    lolli2026es4mll: ["LLM", "Competition", "LLM4SE course", "venue:Workshop"],
+    iannielli2026minds: ["LLM", "Competition", "LLM4SE course", "venue:Workshop"],
+    antonelli2026guysllm: ["LLM", "Competition", "LLM4SE course", "venue:Workshop"],
+    eskandari2026minds: ["LLM", "Competition", "LLM4SE course", "venue:Workshop"],
+    buccelli2026minds: ["LLM", "Competition", "LLM4SE course", "venue:Workshop"],
+    arslan2026malto: ["LLM", "Competition", "MALTO team", "venue:Workshop"],
+    coppola2026multi: ["LLM", "LLM4SE course", "venue:Conference"],
+    arnaudo2026automated: ["LLM", "LLM4SE course", "venue:Conference"],
+    arnaudo2026evaluating: ["LLM", "LLM4SE course", "venue:Conference"],
+    ullasci2026analysis: ["LLM", "LLM4SE course", "venue:Conference"],
+    salami2026malto: ["LLM", "Competition", "MALTO team", "venue:Workshop"],
+
+    // 2025
+    giobergia2025detecting: ["XAI", "venue:Conference"],
+    koudounas2025alexa: ["Benchmark", "Unlearning", "venue:Conference"],
+    paoletti2025mad: ["Industrial ML", "Banking", "venue:Conference"],
+    d2025erasure: ["Unlearning", "venue:Conference"],
+    andrea2025make: ["Unlearning", "venue:Conference"],
+    koudounas2025divergence: ["Speech", "XAI", "venue:Conference"],
+    pierri2025conceptual: ["LLM", "venue:Journal"],
+    giobergia2025bminds: ["LLM", "Competition", "venue:Workshop"],
+    giobergia2025aminds: ["LLM", "Competition", "venue:Workshop"],
+    giobergia2025quantum: ["Quantum ML", "Competition", "venue:Workshop"],
+    fulcini2025enhancing: ["LLM", "LLM4SE course", "venue:Conference"],
+    savelli2025bmalto: ["LLM", "Competition", "Unlearning", "MALTO team", "venue:Workshop"],
+    savelli2025amalto: ["LLM", "Competition", "Hallucinations", "MALTO team", "venue:Workshop"],
+
+    // 2024
+    giobergia2024synthetic: ["Benchmark", "XAI", "venue:Workshop"],
+    poeta2024benchmarking: ["Benchmark", "venue:Conference"],
+    koudounas2024ex: ["AI4Science", "XAI", "venue:Journal"],
+    giobergia2024large: ["LLM", "venue:Conference"],
+    monaco2024ai: ["Industrial ML", "Health", "venue:Journal"],
+    cancedda2024social: ["Industrial ML", "Health", "venue:Journal"],
+    savelli2024enhancing: ["venue:Conference"],
+    koudounas2024contrastive: ["XAI", "Speech", "venue:Conference"],
+    koudounas2024houston: ["AI4Science", "Competition", "Speech", "venue:Workshop"],
+    borra2024malto: ["LLM", "Hallucinations", "Competition", "MALTO team", "venue:Workshop"],
+
+    // 2023 & prior
+    giobergia2023late: ["venue:Workshop"],
+    koudounas2023bad: ["AI4Science", "XAI", "venue:Workshop"],
+    giobergia2023reconstructing: ["AI4Science", "Competition", "venue:Conference"],
+    giobergia2023giobergia: ["LLM", "Competition", "venue:Workshop"],
+    koudounas2023barhotti: ["LLM", "Competition", "venue:Workshop"],
+    giobergia2022triplet: ["Recommender systems", "venue:Workshop"],
+    koudounas2022time: ["AI4Science", "venue:Conference"],
+    pasini2022semantic: ["CV", "venue:Journal"],
+    tornago2023silicon: ["AI4Science", "venue:Journal"],
+    giobergia2022reclaim: ["venue:Conference"],
+    siviero2022first: ["AI4Science", "venue:Journal"],
+    giordano2022data: ["Industrial ML", "Automotive", "venue:Journal"],
+    giordano2021dissecting: ["Industrial ML", "Automotive", "venue:Journal"],
+    attanasio2020dsle: ["ML in teaching", "venue:Conference"],
+    giobergia2020cross: ["venue:Workshop"],
+    giobergia2019fast: ["Unsupervised learning", "venue:Workshop"],
+    giobergia2018mining: ["Industrial ML", "Automotive", "venue:Conference"],
+  };
+
+  const topicColorIndex = new Map(
+    [...new Set(
+      Object.values(publicationTags)
+        .flat()
+        .filter((label) => !label.toLowerCase().startsWith("venue:"))
+        .map((label) => label.toLowerCase())
+    )]
+      .sort()
+      .map((label, index) => [label, index])
+  );
+
+  const colorFor = (label) => {
+    const index = topicColorIndex.get(label.toLowerCase());
+    return `tag-color-${index === undefined ? 0 : index % 24}`;
+  };
+
+  const tagPresentation = (label) => {
+    const isVenue = label.toLowerCase().startsWith("venue:");
+    const visibleLabel = isVenue ? label.slice(label.indexOf(":") + 1).trim() : label;
+    return {
+      visibleLabel,
+      colorClass: isVenue ? "tag-venue" : colorFor(label)
+    };
+  };
+
+  const references = document.querySelector("#refs");
+  if (!references) return;
+  const entries = [...references.querySelectorAll(":scope > .csl-entry")];
+  const entriesByKey = new Map(
+    entries.map((entry) => [entry.id.replace(/^ref-/, ""), entry])
+  );
+  const configuredKeys = new Set(Object.keys(publicationTags));
+  const orderedEntries = [
+    ...Object.keys(publicationTags).map((key) => entriesByKey.get(key)).filter(Boolean),
+    ...entries.filter((entry) => !configuredKeys.has(entry.id.replace(/^ref-/, "")))
+  ];
+  const years = new Map();
+  const activeTag = new URLSearchParams(window.location.search).get("tag");
+  let resultCount = 0;
+
+  const normalizeDisplayedYear = (entry) => {
+    const walker = document.createTreeWalker(entry, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) {
+      node.nodeValue = node.nodeValue.replace(
+        /\b(20(?:1[8-9]|2[0-6]))[a-z](?=\.)/gi,
+        "$1"
+      );
+    }
+  };
+
+  orderedEntries.forEach((entry) => {
+    // Citeproc adds a/b/c to distinguish works by the same author and year.
+    // The website does not use author-year citations, so show the plain year.
+    normalizeDisplayedYear(entry);
+    const key = entry.id.replace(/^ref-/, "");
+    const labels = publicationTags[key] || [];
+    if (activeTag && !labels.some((label) => label === activeTag)) return;
+
+    resultCount += 1;
+    const matches = [...entry.textContent.matchAll(/\b(20(?:1[8-9]|2[0-6]))(?:[a-z])?\b/gi)];
+    const year = matches.length ? matches[matches.length - 1][1] : "Other";
+
+    if (labels.length) {
+      const tagList = document.createElement("div");
+      tagList.className = "publication-tags";
+      tagList.setAttribute("aria-label", "Publication topics");
+      labels.forEach((label) => {
+        const { visibleLabel, colorClass } = tagPresentation(label);
+        const tag = document.createElement("a");
+        tag.className = `publication-tag ${colorClass}`;
+        tag.textContent = visibleLabel;
+        tag.href = `?tag=${encodeURIComponent(label)}`;
+        tag.setAttribute("aria-label", `Show all publications tagged ${visibleLabel}`);
+        if (label === activeTag) tag.setAttribute("aria-current", "page");
+        tagList.appendChild(tag);
+      });
+      entry.appendChild(tagList);
+    }
+
+    if (!years.has(year)) years.set(year, []);
+    years.get(year).push(entry);
+  });
+
+  references.replaceChildren();
+  if (activeTag) {
+    const filter = document.createElement("div");
+    filter.className = "publication-filter";
+    const summary = document.createElement("p");
+    summary.append("Showing ", document.createTextNode(`${resultCount} publication${resultCount === 1 ? "" : "s"} tagged `));
+    const { visibleLabel, colorClass } = tagPresentation(activeTag);
+    const activeBadge = document.createElement("span");
+    activeBadge.className = `publication-tag ${colorClass}`;
+    activeBadge.textContent = visibleLabel;
+    summary.appendChild(activeBadge);
+    const clear = document.createElement("a");
+    clear.href = window.location.pathname;
+    clear.className = "clear-publication-filter";
+    clear.textContent = "View all publications";
+    filter.append(summary, clear);
+    references.appendChild(filter);
+  }
+
+  [...years.keys()].sort((a, b) => b.localeCompare(a)).forEach((year) => {
+    const section = document.createElement("section");
+    section.className = "publication-year";
+    section.setAttribute("aria-labelledby", `year-${year}`);
+    const heading = document.createElement("h2");
+    heading.id = `year-${year}`;
+    heading.textContent = year;
+    section.appendChild(heading);
+    const list = document.createElement("div");
+    list.className = "year-references";
+    years.get(year).forEach((entry) => list.appendChild(entry));
+    section.appendChild(list);
+    references.appendChild(section);
+  });
+});
+</script>

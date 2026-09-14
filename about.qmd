@@ -1,0 +1,11 @@
+---
+title: "About"
+# description: "Biography, research interests, and academic background."
+---
+
+## Biography
+
+I am an Assistant Professor in the **Department of Control and Computer Engineering** at [Politecnico di Torino](https://www.polito.it/). My general research focuses on theoretical and applied machine learning, ranging from traditional approaches to [large language models](publications.html?tag=LLM). I work across theoretical and applied perspectives, seeking to understand the principles that make learning systems effective and reliable, while also developing methods for their responsible and practical use. 
+
+My research is currently focused on the topic of [Machine Unlearning](publications.html?tag=Unlearning): I find that the wide-spread adoption of learning systems has made it a necessity to develop methods to control what models should or shouldn't know. In addition, the "model editing" aspect of Unlearning is -- I believe -- an exciting and promising research direction for the future of machine learning.
+

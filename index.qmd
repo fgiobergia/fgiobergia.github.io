@@ -1,0 +1,34 @@
+---
+pagetitle: "Flavio Giobergia — Assistant Professor"
+description: "Assistant Professor at Politecnico di Torino"
+toc: false
+page-layout: full
+---
+
+::: {.hero}
+::: {.hero-copy}
+<p class="eyebrow">Assistant Professor · Politecnico di Torino</p>
+
+# Flavio Giobergia
+
+<p class="hero-title">Department of Control and Computer Engineering<br>Politecnico di Torino</p>
+
+I work on **machine learning, from foundational methods to large language models**, combining theoretical research with practical applications.
+:::
+
+::: {.portrait-placeholder aria-label="Professional portrait placeholder"}
+<span>FG</span>
+<small>Professional photo</small>
+:::
+:::
+
+::: {.feature-strip}
+::: {.feature-item}
+### Publications
+Peer-reviewed articles, conference papers, preprints, and other scholarly outputs.
+:::
+::: {.feature-item}
+### Teaching
+Courses on practical machine learning and large language models for software engineering.
+:::
+:::
