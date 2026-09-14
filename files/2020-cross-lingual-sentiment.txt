@@ -1,0 +1,8 @@
+@inproceedings{giobergia2020cross,
+  title={Cross-Lingual Propagation of Sentiment Information Based on Bilingual Vector Space Alignment.},
+  author={Giobergia, Flavio and Cagliero, Luca and Garza, Paolo and Baralis, Elena},
+  booktitle={EDBT/ICDT Workshops},
+  pages={8--10},
+  year={2020}
+}
+

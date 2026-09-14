@@ -1,0 +1,10 @@
+@article{giordano2022data,
+  title={Data-driven strategies for predictive maintenance: Lesson learned from an automotive use case},
+  author={Giordano, Danilo and Giobergia, Flavio and Pastor, Eliana and La Macchia, Antonio and Cerquitelli, Tania and Baralis, Elena and Mellia, Marco and Tricarico, Davide},
+  journal={Computers in Industry},
+  volume={134},
+  pages={103554},
+  year={2022},
+  publisher={Elsevier}
+}
+

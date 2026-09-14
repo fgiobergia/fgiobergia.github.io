@@ -1,0 +1,9 @@
+@inproceedings{attanasio2020dsle,
+  title={DSLE: a smart platform for designing data science competitions},
+  author={Attanasio, Giuseppe and Giobergia, Flavio and Pasini, Andrea and Ventura, Francesco and Baralis, Elena and Cagliero, Luca and Garza, Paolo and Apiletti, Daniele and Cerquitelli, Tania and Chiusano, Silvia},
+  booktitle={2020 IEEE 44th Annual Computers, Software, and Applications Conference (COMPSAC)},
+  pages={133--142},
+  year={2020},
+  organization={IEEE}
+}
+

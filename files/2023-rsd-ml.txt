@@ -1,0 +1,10 @@
+@article{tornago2023silicon,
+  title={Silicon sensors with resistive read-out: Machine Learning techniques for ultimate spatial resolution},
+  author={Tornago, Marta and Giobergia, Flavio and Menzio, Luca and Siviero, Federico and Arcidiacono, Roberta and Cartiglia, Nicolo' and Costa, M and Ferrero, M and Gioachin, G and Mandurrino, M and others},
+  journal={Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+  volume={1047},
+  pages={167816},
+  year={2023},
+  publisher={Elsevier}
+}
+
